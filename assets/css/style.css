@@ -9,6 +9,52 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+웹폰트 추가
+/* 귀여운 스타일 폰트 */
+@font-face {
+  font-family: 'TAEBAEKmilkyway';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 나눔바름고딕 */
+/* @font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+ } */
+ 
+ @font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+ }
+ 
+ .nanumbarungothic * {
+  font-family: 'NanumBarunGothic', sans-serif;
+ }
+
+ /* 리디바탕 */
+ @font-face {
+  font-family: 'RIDIBatang';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* 본고딕 notosans */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #5a656e;
@@ -491,6 +537,8 @@ section {
 .about .content .count-box {
   padding: 20px 0;
   width: 100%;
+  /* 추가) 글자 간격조정 */
+  display : flex;
 }
 
 .about .content .count-box i {
@@ -501,14 +549,18 @@ section {
   line-height: 0;
 }
 
+/* 본문 폰트 */
 .about .content .count-box span {
   font-size: 24px;
-  line-height: 30px;
+  /* line-height: 24px; */
   display: block;
-  font-weight: 700;
+  font-weight: 550;
   color: #2c4964;
   margin-left: 50px;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
+  font-family: 'NanumBarunGothic';
+  /* font-family: 'RIDIBatang'; */
+  /* vertical-align: bottom; */
 }
 
 .about .content .count-box p {
@@ -528,7 +580,7 @@ section {
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
-
+ 
 
 .about .content .count-box a:hover {
   color: #6b96be;
@@ -609,7 +661,7 @@ section {
   color: #4b7dab;
   font-family: "Poppins", sans-serif;
 }
-
+/* .resume .resume-title  */
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
@@ -619,10 +671,11 @@ section {
 
 .resume .resume-item h4 {
   line-height: 18px;
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 600;
   color: #2c4964;
   margin-bottom: 10px;
+  font-family: 'NanumBarunGothic', sans-serif;
 }
 
 .resume .resume-item h5 {
