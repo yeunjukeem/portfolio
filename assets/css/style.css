@@ -33,6 +33,7 @@ h6 {
   font-family: "Playfair Display", serif;
 }
 
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -501,8 +502,8 @@ section {
 }
 
 .about .content .count-box span {
-  font-size: 36px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 30px;
   display: block;
   font-weight: 700;
   color: #2c4964;
@@ -528,14 +529,17 @@ section {
   transition: ease-in-out 0.3s;
 }
 
+
 .about .content .count-box a:hover {
   color: #6b96be;
 }
 
 .about .image {
+  margin-left: 100px;
+  width: 300px;
   background: url("../img/me.jpg") center center no-repeat;
   background-size: cover;
-  min-height: 400px;
+  /* min-height: 400px; */
 }
 
 @media (max-width: 991px) {
@@ -589,6 +593,11 @@ section {
   background-color: #dd5a92;
 }
 
+
+.skills .skill-icons{
+  width: 50px;
+  margin: 13px;
+}
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
